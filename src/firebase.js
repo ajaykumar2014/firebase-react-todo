@@ -1,14 +1,14 @@
 import firebase from 'firebase';
 
 const firebaseInitizeApp = firebase.initializeApp({
-  apiKey: 'AIzaSyAu-CiQ5Bz20k-O4hlsGS_53u6XgAbZZqs',
-  authDomain: 'lateral-booster-247512.firebaseapp.com',
-  databaseURL: 'https://lateral-booster-247512.firebaseio.com',
-  projectId: 'lateral-booster-247512',
-  storageBucket: 'lateral-booster-247512.appspot.com',
-  messagingSenderId: '31966948507',
-  appId: '1:31966948507:web:c106852f7a1768a3e96a3e',
-  measurementId: 'G-BWHQM55X6Y',
+//   apiKey: '',
+//   authDomain: '',
+//   databaseURL: '',
+//   projectId: '',
+//   storageBucket: '',
+//   messagingSenderId: '',
+//   appId: '',
+//   measurementId: '',
 });
 
 const db = firebaseInitizeApp.firestore().collection('todo_collection');
