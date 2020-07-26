@@ -4,6 +4,7 @@ import {
   ListItemText,
   IconButton,
   ListItemIcon,
+  Box,
 } from '@material-ui/core';
 import { deleteTodo, updateTodo } from './firebase';
 import DeleteIcon from '@material-ui/icons/Delete';
@@ -32,7 +33,19 @@ const TodoItem = ({ item }) => {
       {!isEdit && (
         <>
           <ListItemText
-            primary={item.data.text}
+            primary={
+              <Box
+                component="div"
+                my={2}
+                textOverflow="ellipsis"
+                padding="5px"
+                whiteSpace="nowrap"
+                overflow="hidden"
+                bgcolor="background.paper"
+              >
+                {item.data.text}
+              </Box>
+            }
             style={{ width: '90%', flex: 'none' }}
           />
 

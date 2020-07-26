@@ -19,17 +19,19 @@ const TodoEdit = ({ item, onTodoUpdate, onTodoCancel }) => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        'flex-direction': 'row',
-        'justify-content': 'space-between',
-        width: '90%',
-      }}
-    >
+    // <div
+    //   style={{
+    //     display: 'flex',
+    //     'flex-direction': 'row',
+    //     'justify-content': 'space-between',
+    //     width: '100%',
+    //   }}
+    // >
+    <>
       <TextField
         id="standard-full-width"
         label="Todo's"
+        style={{ width: '90%', flex: 'none' }}
         fullWidth
         multiline
         variant="outlined"
@@ -51,7 +53,8 @@ const TodoEdit = ({ item, onTodoUpdate, onTodoCancel }) => {
           </IconButton>
         </ListItemIcon>
       </div>
-    </div>
+    </>
+    // </div>
   );
 };
 
